@@ -59,6 +59,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxd-HQ-pY0"/>
+                                    <segue destination="OM0-7e-LhS" kind="show" id="jmF-p8-wOH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,6 +75,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j0G-Vh-hee">
+            <objects>
+                <viewController id="OM0-7e-LhS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNn-x9-els">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sL6-4A-UuC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV8-MZ-ZUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="133"/>
         </scene>
     </scenes>
 </document>

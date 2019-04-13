@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        loginLabel.text = "Hello " + usernameTextField.text + '!'
+        loginLabel.text =  usernameTextField.text
     }
 
 

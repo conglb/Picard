@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "picard",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito9d95b33a",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

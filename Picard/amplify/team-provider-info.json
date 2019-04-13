@@ -1,0 +1,19 @@
+{
+    "aws": {
+        "awscloudformation": {
+            "AuthRoleName": "picard-20190411200023-authRole",
+            "UnauthRoleArn": "arn:aws:iam::342057077389:role/picard-20190411200023-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::342057077389:role/picard-20190411200023-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "picard-20190411200023-deployment",
+            "UnauthRoleName": "picard-20190411200023-unauthRole",
+            "StackName": "picard-20190411200023",
+            "StackId": "arn:aws:cloudformation:us-east-2:342057077389:stack/picard-20190411200023/ce4601d0-5c59-11e9-b229-0658482cfd4e"
+        },
+        "categories": {
+            "auth": {
+                "cognito9d95b33a": {}
+            }
+        }
+    }
+}
