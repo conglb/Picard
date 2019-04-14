@@ -10,6 +10,10 @@ target 'Picard' do
   # Pods for Picard
     pod 'AWSCore', '~> 2.9.0'
     pod 'AWSAppSync', '~> 2.10.0'
+    pod 'AWSUserPoolsSignIn'
+    pod 'AWSAuthUI'
+    pod 'AWSMobileClient', '~> 2.9.0'
+    pod 'AWSS3', '~> 2.9.0'   # For file transfers
 
   target 'PicardTests' do
     inherit! :search_paths
