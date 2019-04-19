@@ -80,15 +80,41 @@
         <!--View Controller-->
         <scene sceneID="j0G-Vh-hee">
             <objects>
-                <viewController id="OM0-7e-LhS" sceneMemberID="viewController">
+                <viewController id="OM0-7e-LhS" customClass="ViewController" customModule="Picard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uNn-x9-els">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzC-cd-7w7">
+                                <rect key="frame" x="67" y="143" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uaH-Iu-UIy" appends="YES" id="jY1-cm-kxZ"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDK-rO-oGM">
+                                <rect key="frame" x="164" y="329" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="selectImageFromLibrary:" destination="OM0-7e-LhS" eventType="touchUpInside" id="Kzf-ES-yGi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sL6-4A-UuC"/>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="BzC-cd-7w7" id="Cfc-ny-zJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV8-MZ-ZUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uaH-Iu-UIy">
+                    <connections>
+                        <action selector="selectImageFromLibrary:" destination="OM0-7e-LhS" id="CyP-AA-MCW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1832.8" y="132.68365817091455"/>
         </scene>

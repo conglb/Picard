@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import AWSCore
-import AWSAppSync
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        /*
         // Override point for customization after application launch.
-
+        do {
+            // You can choose the directory in which AppSync stores its persistent cache databases
+            let cacheConfiguration = try AWSAppSyncCacheConfiguration()
+            
+            // AppSync configuration & client initialization
+            let appSyncServiceConfig = try AWSAppSyncServiceConfig()
+            let appSyncConfig = try AWSAppSyncClientConfiguration(appSyncServiceConfig: appSyncServiceConfig,
+                                                                  cacheConfiguration: cacheConfiguration)
+            appSyncClient = try AWSAppSyncClient(appSyncConfig: appSyncConfig)
+        } catch {
+            print("Error initializing appsync client. \(error)")
+        }
+        */
         // other methods
         return true
     }
